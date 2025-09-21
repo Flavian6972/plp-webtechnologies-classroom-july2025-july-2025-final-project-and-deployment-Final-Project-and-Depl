@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/content.css">
+</head>
+
+<body class="contact-page">
+    <header class="header">
+        <h1 class="logo">Flavian</h1>
+        <nav class="navigation">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="services.html">Services</a> </li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <p>For more info, please contact me via the following channels: </p>
+        <div class="address">
+            <h3>Physical Address</h3>
+            <p>F77 Lower StateHouse Road, Nairobi</p>
+            <h3>Call Me</h3>
+            <p><a href="tel:+254713101771">+254 713 101 771</a></p>
+            <h3> Email Me</h3>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=onyangofle@gmail.com"
+     target="_blank" rel="noopener noreferrer">onyangofle@gmail.com</a></p> <!--Open Gmail’s Compose window directly -->
+
+        </div>
+
+        <div>
+            <form action="https://formspree.io/f/xnngadaz" method="post">
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name"> <br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" placeholder="user@gmail.com"><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject"><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Type your message here..." maxlength="500"></textarea> <br>
+                <p id="char-count">500 characters remaining</p><br>
+                <br>
+                <button type="submit">Send</button>  
+                
+                <!--success/error feedback-->
+                <div id="form-feedback"></div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer"><p>&copy; 2025 Flavian Onyango. All rights reserved.</p></footer>
+
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>

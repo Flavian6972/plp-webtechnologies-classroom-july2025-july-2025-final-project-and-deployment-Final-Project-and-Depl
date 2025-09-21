@@ -1,0 +1,170 @@
+/*RESUME PAGE LAYOUT*/
+.content {
+  display: flex;             /* enable flexbox */
+  flex-wrap: wrap;           /* allow wrapping on smaller screens */
+  justify-content: space-between;
+  gap: 2rem;                  /* space between columns */
+  padding: 2rem;
+}
+
+.content section {
+  flex: 1 1 300px;            /* grow/shrink, minimum width 300px */
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;  /* optional: remove bullets */
+  padding: 0;
+}
+
+section li {
+  flex: 1 1 200px;   /* each item takes up min 200px */
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+
+/*ABOUT PAGE LAYOUT*/
+.about-page .content {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+
+/*SERVICES PAGE LAYOUT*/
+.service-page .content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.services {
+  background-color: #f9f9f9;  /* subtle contrast with page background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.services h2 {
+  color: #264653;           /* matches your chosen heading palette */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.services ul {
+    text-align: left;
+  list-style: none;          /* remove default bullets */
+  padding: 0;
+}
+
+.services li {
+  margin-bottom: 1rem;
+  padding-left: 0;
+  position:relative;
+  line-height: 1.6;
+}
+
+.services li::before {
+  content: "✓";              /* custom checkmark bullet */
+  color: #2A9D8F;            /* teal accent */
+  position: absolute;
+  left: -1.2rem;
+}  
+
+/*CONTACT PAGE LAYOUT */
+.contact-page .content {
+  display: flex;
+  flex-wrap: wrap;           /* stack on small screens */
+  justify-content: center;
+  align-items: flex-start;   /* align items to top */
+  gap: 2rem;                 /* space between cards */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Intro text stays full width */
+.contact-page .content > p {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Cards */
+.contact-page .address,
+.contact-page form {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 350px;           /* grow/shrink, min width 350px */
+  max-width: 500px;
+}
+
+/* Address card content */
+.contact-page .address h3 {
+  color: #264653;            /* heading color */
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Form elements */
+.contact-page form label {
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-page form button {
+  margin-top: 1.2rem;
+  background-color: #264653;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.contact-page form button:hover {
+  background-color: #2A9D8F;
+} 
+
+#char-count {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+
+

@@ -1,0 +1,104 @@
+/* Make page take full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+} 
+
+.home-page::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); /* dark overlay */
+    z-index: -1;
+}
+
+
+/* Make headings white on homepage */
+.home-page .content h1,
+.home-page .content h2 {
+  color:#DFFFE0;       /* pure white */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Helps text pop */
+}
+
+h1 { color: #222; }      /* charcoal */
+h2 { color: #555; }
+h3 { color: #666; }
+a  { color: #00796B; }    /* teal links */
+a:hover { color: #004D40; } /* darker teal on hover */
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+
+
+.header {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.links {
+  list-style: none;
+  display: flex;       
+  gap: 2rem;           
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #00bcd4;
+}
+
+.content {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+button{
+    background-color: #333;
+}
+button a {
+  text-decoration: none;
+  color:white;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+} 
+
+/* global.css or index.css */
+body.home-page {
+  background-image: url("../images/Flavian2.jpg"); 
+  background-size: cover;       /* makes the image fill the entire screen */
+  background-position:center;  /* centers the photo */
+  background-repeat: no-repeat; /* prevent tiling */
+  background-attachment: fixed; /* optional: creates a parallax effect */
+  color: #fff;                  /* adjust text color for contrast */
+}
+
+
