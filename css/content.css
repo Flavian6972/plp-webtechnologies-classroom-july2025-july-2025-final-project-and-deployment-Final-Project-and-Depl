@@ -1,3 +1,7 @@
+body {
+    font-size: clamp(14px, 2.5vw, 18px); /* text scales but stays readable */
+}
+
 /*RESUME PAGE LAYOUT*/
 .content {
   display: flex;             /* enable flexbox */
@@ -95,7 +99,6 @@ section li {
   align-items: flex-start;   /* align items to top */
   gap: 2rem;                 /* space between cards */
   padding: 2rem;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -164,6 +167,18 @@ section li {
   font-size: 0.9rem;
   color: #555;
   margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;   /* stack vertically */
+        align-items: center;
+    }
+
+    .address,
+    .contactForm{
+        width: 100%;              /* let each fill the screen */
+    }
 }
 
 
