@@ -50,11 +50,14 @@ portfolio-website/
 │   ├─ resume.html
 │   ├─ services.html
 │   └─ contactPage.html
+│
 ├─ css/
 │   ├─ styles.css  # Main stylesheet
 │   ├─ content.css 
+│
 ├─ js/
-│   └─ script.js        # JavaScript for interactivity
+│   └─ script.js 
+│       # JavaScript for interactivity
 └─ images/            # Photos and project screenshots
 
 🔧 **Implementation Steps**
