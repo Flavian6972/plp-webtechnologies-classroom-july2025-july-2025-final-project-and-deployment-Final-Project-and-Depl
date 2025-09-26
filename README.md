@@ -1,90 +1,86 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+## MY PORTFOLIO WEBSITE
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+# Project Overview
+The Portfolio Website is a personal branding platform that blends my background in Medicine (MBChB) and Software Development.
+It highlights my medical experiences, technical projects, and services to potential collaborators, med-tech startups, and employers.
+This project demonstrates my ability to build a responsive, multipage website using modern web technologies and clean, semantic code.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+# Objectives
 
----
+Present a professional online presence for networking and career opportunities.
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+Showcase medical and tech projects (e.g., Virtual Histology Lab, Afriplates Recipe Recommender).
 
-Before you write any code, take time to plan:
+Provide service details (web development, educational app design, BLS training).
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+Offer an integrated contact form for direct communication.
 
-**Goal:** Show intentional structure and user journey across the site.
+✨ **Key Features**
 
----
+Home Page – Hero section with personal tagline and quick navigation.
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+About Page – Professional biography combining MBChB studies and software development journey.
 
-Using your plan, begin building:
+Resume Page – Résumé and clean education/experience timeline.
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+Services Page – Details of medical-tech services with clear action-driven descriptions.
 
-Each page should:
+Portfolio Page – Visual showcase of completed projects with screenshots and live links.
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+Contact Page – Contact form powered by Formspree for email submissions.
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+Responsive Design – Optimized for desktop, tablet, and mobile screens.
 
----
+Semantic HTML – Proper use of <header>, <nav>, <main>, <section>, <footer> for accessibility and SEO.
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+🛠️ **Technologies Used**
+**Technology**    **Purpose**
+HTML5         	    Semantic page structure
+CSS3          	    Modern, responsive styling
+JavaScript          Interactivity (menu toggle, form validation)
+Formspree	          Contact form handling
+Git & GitHub	      Version control & deployment
+GitHub Pages	      Free hosting and continuous deployment
 
-Before deployment, refactor your project to follow production-friendly practices:
+📂 **Project Structure**
+portfolio-website/
+│  index.html                # Homepage
+├─ html/
+│   ├─ about.html
+│   ├─ resume.html
+│   ├─ services.html
+│   └─ contactPage.html
+├─ css/
+│   ├─ styles.css  # Main stylesheet
+│   ├─ content.css 
+├─ js/
+│   └─ script.js        # JavaScript for interactivity
+└─ images/            # Photos and project screenshots
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+🔧 **Implementation Steps**
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Planning & Wireframing – Defined page structure and navigation flow.
 
----
+Content Creation – Wrote professional copy for About, Services, and Projects pages.
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+Development – Built semantic HTML pages and styled them with CSS Flex.
 
-Once your project is complete, choose a method to **host your site online**.
+Testing – Checked responsiveness across screen sizes and validated HTML/CSS.
 
-You can use:
+Deployment – Deployed the site to GitHub Pages with Git for version control.
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+⚡ **Challenges & Solutions**
+**Challenge**                       	     **Solution**
+Ensuring full responsiveness	            Applied CSS Grid & Flexbox with targeted media queries.
+Secure contact form handling	            Integrated Formspree to handle form submissions without a custom backend.
+Balancing medical and tech content	      Organized content into distinct pages with a clean, intuitive navigation.
 
-Deploy your project and confirm that:
+**🌱 Future Enhancements**
+Add a blog section for med-tech insights.
+Integrate a dark mode toggle for user preference.
+Include project demos with live previews or embedded videos.
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+**Link to live site**
+ https://flavian6972.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 
-**Goal:** Publish your work online and make it accessible to the world.
 
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
